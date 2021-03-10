@@ -14,10 +14,17 @@ el.innerText =`
 }
 .DocSearch-Hit-Container {
   height: unset;
-  padding: 4px 2px;
+  padding: 2px 2px;
 }
 .DocSearch-Hit-source {
   line-height: unset;
+}
+.DocSearch-Hit-path {
+  font-size: 0.5em;
+  line-height: 0.5em;
+}
+.DocSearch-Hit-content-wrapper {
+  line-height: 1em;
 }
 :root {
 --docsearch-hit-height: 0;
