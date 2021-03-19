@@ -1,8 +1,14 @@
 const fs = require('fs')
+const path = require('path')
 
 const oriLines = fs.readFileSync('README.md').toString().split('\n')
 const newLines = []
-const formattedFileLines = fs.readdirSync('src').map((fileName) => `- [${fileName}](https://github.com/kuanyui/yauserscripts/raw/master/src/${fileName})`)
+const formattedFileLines = fs.readdirSync('src').map((fileName) => {
+  const desc = getDesc(fileName)
+  return `[${fileName}](https://github.com/kuanyui/yauserscripts/raw/master/src/${fileName}) ([src](https://github.com/kuanyui/yauserscripts/src/${fileName})) | ${desc}`
+})
+formattedFileLines.unshift('----------------- | ------------')
+formattedFileLines.unshift('Installation Link | Description')
 
 let stage = 0
 for (const ol of oriLines) {
@@ -25,3 +31,12 @@ for (const ol of oriLines) {
 }
 
 fs.writeFileSync('README.md', newLines.join('\n'), { encoding: 'utf8', mode: '666' })
+
+function getDesc (fileName) {
+  const content = fs.readFileSync(path.join(__dirname, 'src', fileName), { encoding: 'utf-8', flag: 'r' })
+  const m = content.match(/\/\/ @name\s+(.+)/)
+  if (m) {
+    return m[1]
+  }
+  return '(ERROR, please check update-readme.js)'
+}
