@@ -5,7 +5,7 @@ const oriLines = fs.readFileSync('README.md').toString().split('\n')
 const newLines = []
 const formattedFileLines = fs.readdirSync('src').map((fileName) => {
   const desc = getDesc(fileName)
-  return `[${fileName}](https://github.com/kuanyui/yauserscripts/raw/master/src/${fileName}) ([src](https://github.com/kuanyui/yauserscripts/src/${fileName})) | ${desc}`
+  return `[${fileName}](https://github.com/kuanyui/yauserscripts/raw/master/src/${fileName}) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/${fileName})) | ${desc}`
 })
 formattedFileLines.unshift('----------------- | ------------')
 formattedFileLines.unshift('Installation Link | Description')
