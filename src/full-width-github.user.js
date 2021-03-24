@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Full-width page, and smaller code line-height in Github
-// @version  0.1
+// @version  0.2
 // @grant    none
 // @match	  https://github.com/*
 // @match	  https://www.github.com/*
@@ -10,7 +10,10 @@
 
 const el = document.createElement('style')
 el.innerText =`
-/*.container-xl { max-width: unset; }*/
+.container-xl, .container-lg {
+  max-width: unset;
+}
+
 .blob-code, .blob-num {
     line-height: 1;
     font-family: 'DejaVu Sans Mono';
