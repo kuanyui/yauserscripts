@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Full-Width in Webpack
-// @version  0.1
+// @version  0.2
 // @grant    none
 // @match	  https://webpack.js.org/*
 // @match	  https://*.webpack.js.org/*
