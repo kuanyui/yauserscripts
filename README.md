@@ -4,6 +4,7 @@
 Installation Link | Description
 ----------------- | ------------
 [algoria-search-box.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/algoria-search-box.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/algoria-search-box.user.js)) | Higher Algoria search box
+[esj-remove-css-selection-limit.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/esj-remove-css-selection-limit.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/esj-remove-css-selection-limit.user.js)) | ESJ remove selection limit
 [full-width-csstrick.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/full-width-csstrick.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/full-width-csstrick.user.js)) | Full-Width CSS-Trick
 [full-width-github.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/full-width-github.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/full-width-github.user.js)) | Full-width page, and smaller code line-height in Github
 [full-width-mdn.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/full-width-mdn.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/full-width-mdn.user.js)) | Full-Width in MDN
