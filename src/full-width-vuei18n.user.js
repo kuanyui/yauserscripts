@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        Full-Width in VueI18n
-// @version  0.1
+// @version  0.2
 // @grant    none
-// @match	  https://vue-i18n.intlify.dev/guide/*
+// @match	  https://vue-i18n.intlify.dev/*
 // @run-at    document-end
 // @grant        none
 // ==/UserScript==
