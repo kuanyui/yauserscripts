@@ -7,7 +7,7 @@
 // @grant        none
 // ==/UserScript==
 
-function highlightDangerousKeywords() {
+function highlightKeywords() {
     document.querySelectorAll('.pill__title').forEach((el) => {
         const text = el.innerText.trim()
         const blackList = ['いつか欲しい', '政治に無関心', 'すでにい']
@@ -19,6 +19,15 @@ function highlightDangerousKeywords() {
                 console.log(el)
             }
         }
+        const whiteList = ['クラシック']
+        for (const blackKey of whiteList) {
+            if (text.includes(blackKey)) {
+                el.parentElement.style.border = '2px solid #558800'
+                el.style.color = '#ffffff'
+                el.style.backgroundColor = '#558800'
+                console.log(el)
+            }
+        }
     })
 }
 
@@ -26,7 +35,7 @@ let debounceTimeoutId = -1
 
 function nodeWatcherFn(mutationList, observer) {
     window.clearTimeout(debounceTimeoutId)
-    debounceTimeoutId = window.setTimeout(highlightDangerousKeywords, 200);
+    debounceTimeoutId = window.setTimeout(highlightKeywords, 200);
 }
 
 mutObserver = new MutationObserver(nodeWatcherFn)
