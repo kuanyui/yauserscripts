@@ -15,6 +15,7 @@ Installation Link | Description
 [full-width-webpack.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/full-width-webpack.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/full-width-webpack.user.js)) | Full-Width in Webpack
 [mdn-always-english.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/mdn-always-english.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/mdn-always-english.user.js)) | Always English in Mozilla Doc
 [pixi-api-doc-title.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/pixi-api-doc-title.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/pixi-api-doc-title.user.js)) | Pixi API Reference Document Title
+[style-leetcode.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/style-leetcode.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/style-leetcode.user.js)) | LeetCode style fix
 [stylus-lang-doc.user.js](https://github.com/kuanyui/yauserscripts/raw/master/src/stylus-lang-doc.user.js) ([src](https://github.com/kuanyui/yauserscripts/blob/master/src/stylus-lang-doc.user.js)) | Readable Doc of Stylus-Lang
 <!-- link end -->
 # License
